@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang = "en">
+<head>
+    <meta charset ="UTF- 8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" contend="width=device-width, initial-scale=1">
+    <title>Documentation</title>
+    <style> 
+<!--Cores da pagina-->
+    .nome1{background-color: darksalmon} 
+    .nomeback{background-color: darksalmon}
+    .sabor1{background: darksalmon}
+    .sabor2{background-color: darksalmon}
+    .obv{background-color: darksalmon}
+<!--Tamanho do formulário-->
+   .tamForm{
+        width:700px; 
+        margin-left: auto; 
+        margin-right: auto; 
+
+    </style>
+</head>
+<body>
+    <center>
+        <div style="overflow-x:auto;">
+            <img src="pizza1.jpg" height="300" class="imagem">
+            <form method = "POST" action="superPizza.jsp">
+            <table border=1 class="tamForm">
+                    <tr>
+                        <td class="nome1">Nome:</td>
+                        <td class="nomeback"><input type="text" name="nome"></td>
+                    </tr>
+                    <tr>
+                        <td>Tamanho:</td>
+                        <td><input type="radio" name="tamanho" value="g"> Grande
+                        <br>
+                        <input type="radio" name="tamanho" value="m"> Médio
+                        <br>
+                        <input type="radio" name="tamanho" value="p"> Pequeno</td>
+                    </tr>
+                    <tr>
+                        <td class="sabor1">Sabor:</td>
+                        <td class="sabor2"> <select name="sabor">
+                            <option>Calabresa</option>
+                            <option>Quatro Queijos</option>
+                            <option>Chocolate</option>
+                        </select>
+                    </tr>
+                    <tr>
+                        <td>Adicionais:</td>
+                        <td>
+                        <input type="checkbox" name="borda" value="sim"> Borda Recheada de Requeijão
+                        <br>
+                        <input type="checkbox" name="queijoExtra" value="sim"> Queijo Extra
+                        <br>
+                        <input type="checkbox" name="cocaCola" value="sim"> Coca-Cola 2L
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="obv" colspan=10>Observações:
+                        <br>
+                        <textarea  name="msg" rows"10" cols="30"></textarea></td>
+                    </tr>
+                    <td colspan=10 >
+                        <center>
+                        <input  type="submit" >
+                        </center>
+                    </td>
+                </form>
+             </table>
+        </div>
+    </center>
+</body>
+
+</html>
